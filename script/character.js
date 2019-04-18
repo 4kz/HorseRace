@@ -10,4 +10,14 @@ class Character{
     move(random) {
         return this.speed * this.strength * random;
     }
+
+    getJson(){
+        return {
+            "bet" : this.bet,
+            "name" : this.name,
+            "image" : this.image,
+            "stamina" : this.stamina,
+            "strength" : this.strength
+        }
+    }
 }
