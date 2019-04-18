@@ -1,0 +1,27 @@
+.navbar-title{
+    margin: 10px;
+}
+
+#rules-button{
+    margin: 15px;
+    font-size: 20px;
+}
+
+.spacer{
+    margin-top: 100px;
+    
+}
+
+.navbar{
+    background-color: #c8efae;
+}
+
+.row {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside; 
+    padding-left: 0;
+}
