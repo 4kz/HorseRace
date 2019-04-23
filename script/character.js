@@ -7,6 +7,8 @@ class Character{
         this.stamina = stamina;
         this.strength = strength;
         this.position = position;
+
+        this.active = true;
     }
 
     move(random) {
@@ -21,7 +23,11 @@ class Character{
             stamina: this.stamina,
             strength: this.strength,
             bet: this.bet
-        }
+        };
+    }
+
+    toggleActive(){
+        this.active = !this.active;
     }
 
     getId() {
@@ -51,12 +57,16 @@ class Character{
     getPosition(){
         this.position;
     }
+
+    isActive(){
+        return this.active;
+    }
 }
 
 const characterTemplate = ({id, name, strength, stamina, image, bet}) => `
     <div id="character-${id}" class="col-md-3 mx-auto">
         <div class="card mx-auto" style="width: 18rem;">
-            <img src="${image}" class="card-img-top" alt="character-${id}"></img>
+            <img onClick="ToggleCard(${id})" src="${image}" class="card-img-top" alt="character-${id}"></img>
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
                 <ul>

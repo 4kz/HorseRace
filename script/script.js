@@ -1,4 +1,6 @@
 const CHARACTERS = 4;
+var charactersInGame;
+var activeCharacters;
 
 //Uses the template above to show 4 characters
 function RenderCharacters(div, characters){
@@ -29,10 +31,26 @@ function SelectCharacters(json){
 		characters.push(newCharacter);
 	}
 
+	activeCharacters = characters.length;
 	return characters;
 }
 
-var charactersInGame;
+function ToggleCard(id){
+	const element = $(`#character-${id}`);
+
+	element.css({
+		"opacity": charactersInGame[id].isActive() ? "0.6" : "1"
+	});
+
+	charactersInGame[id].toggleActive();
+
+	if(charactersInGame[id].isActive()){
+		activeCharacters++;
+	}
+	else{
+		activeCharacters--;
+	}
+}
 
 $(document).ready(() => {
 	var charactersDiv = $("#characters");
