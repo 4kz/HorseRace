@@ -66,7 +66,7 @@ class Character{
 const characterTemplate = ({id, name, strength, stamina, image, bet}) => `
     <div id="character-${id}" class="col-md-3 mx-auto">
         <div class="card mx-auto" style="width: 18rem;">
-            <img onClick="ToggleCard(${id})" src="${image}" class="card-img-top" alt="character-${id}"></img>
+            <img onClick="ToggleCard(${id})" src="${image}" class="card-img-top img-thumbnail" alt="character-${id}"></img>
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
                 <ul>

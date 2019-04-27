@@ -2,71 +2,78 @@
 	{
 		"bet" : "1.50",
 		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
+		"image" : "img/bojack.png",
+		"stamina" : "10",
+		"strength" : "10"
+	},
+	{
+		"bet" : "2.00",
+		"name" : "Brian",
+		"image" : "img/brian.png",
+		"stamina" : "5",
+		"strength" : "15"
+	},
+	{
+		"bet" : "1.20",
+		"name" : "Jake",
+		"image" : "img/jake.png",
+		"stamina" : "15",
+		"strength" : "10"
+	},
+	{
+		"bet" : "2.50",
+		"name" : "Leone Il Cane Fifone",
+		"image" : "img/leoneilcanefifone.png",
+		"stamina" : "5",
+		"strength" : "10"
+	},
+	{
+		"bet" : "1.20",
+		"name" : "Mr Meeseeks",
+		"image" : "img/mrmeeseeks.png",
+		"stamina" : "20",
+		"strength" : "10"
+	},
+	{
+		"bet" : "1.10",
+		"name" : "Oogway",
+		"image" : "img/oogway.png",
+		"stamina" : "20",
+		"strength" : "30"
+	},
+	{
+		"bet" : "1.45",
+		"name" : "Patrick",
+		"image" : "img/patrick.png",
+		"stamina" : "12",
+		"strength" : "11"
+	},
+	{
+		"bet" : "3.50",
+		"name" : "Roger",
+		"image" : "img/roger.png",
+		"stamina" : "5",
+		"strength" : "8"
+	},
+	{
+		"bet" : "2.30",
+		"name" : "SpiderPork",
+		"image" : "img/spiderpork.png",
+		"stamina" : "50",
+		"strength" : "5"
+	},
+	{
+		"bet" : "1.50",
+		"name" : "Spongebob Squarepants",
+		"image" : "img/spongebob.png",
 		"stamina" : "10",
 		"strength" : "10"
 	},
 	{
 		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
-	},
-	{
-		"bet" : "1.50",
-		"name" : "Bojack",
-		"image" : "img/bojack.jpg",
-		"stamina" : "10",
-		"strength" : "10"
+		"name" : "Zoiberg",
+		"image" : "img/zoiberg.png",
+		"stamina" : "5",
+		"strength" : "30"
 	}
 ]
