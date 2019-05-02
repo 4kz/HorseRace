@@ -85,7 +85,7 @@ $(document).ready(() => {
 			PlaceCharactersOnTrack();
 		}
 	});
-	
+
 	$.getJSON("data/characters.json", (json) => {
 		charactersInGame = SelectCharacters(json);
 		RenderCharacters(charactersDiv, charactersInGame);
