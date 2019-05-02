@@ -1,4 +1,5 @@
 const CHARACTERS = 4;
+const MIN_PLAYER = 1;
 var charactersInGame;
 var activeCharacters;
 
@@ -55,7 +56,8 @@ function ToggleCard(id){
 function ResizeTrackRows(){
 	$(".track-row").css({
 		"height": `${100/activeCharacters}%`,
-		"width": "100%"
+		"width": "100%",
+		"position": "relative"
 	});
 	$(".track-row img").addClass("track-img");
 }
@@ -73,16 +75,42 @@ function PlaceCharactersOnTrack(){
 	ResizeTrackRows();
 }
 
+var t = 0;
+var xcenter;   // center X position
+var ycenter;   // center Y position
+
+function moveit() {
+    t += 0.05;
+
+    var r = 100;         // radius
+
+    var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
+    var newTop = Math.floor(ycenter + (r * Math.sin(t)));
+
+    $('.track-img').animate({
+        top: newTop,
+        left: newLeft,
+    }, 1, function() {
+        moveit();
+    });
+}
+
+
 $(document).ready(() => {
 	var charactersDiv = $("#characters");
 
 	$("#start-button").click(() => {
-		if(activeCharacters < 2){
+		if(activeCharacters < MIN_PLAYER){
 			alert("You must chose at least 2 players to start a race!");
 		}
 		else{
 			alert(`${activeCharacters} in game!`);
 			PlaceCharactersOnTrack();
+
+			ycenter = $("#track").height()/2;
+			xcenter = $("#track").width()/2;
+
+			moveit();
 		}
 	});
 
